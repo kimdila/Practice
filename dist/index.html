@@ -11,6 +11,8 @@
       href="https://fonts.googleapis.com/css2?family=Aleo:ital,wght@0,400;0,700;1,400&family=Inter&display=swap"
       rel="stylesheet"
     />
+    <!-- you should read about defer attribute https://javascript.info/script-async-defer -->
+    <script defer src="/main.js"></script>
   </head>
   <body>
     <header>
@@ -39,123 +41,7 @@
     </header>
     <section class="experience">
       <h2>Our experience and works</h2>
-      <div class="wrapper">
-        <div class="case-study">
-          <a href="/info/caveat" class="case-study-thumbnail" id="blue">
-            <img
-              class="case-study-logo"
-              src="/images/Caveat_logo.png"
-              alt="Caveat Logo"
-            />
-            <img src="/images/6_Hellocaveat.png" alt="Caveat" />
-          </a>
-          <div>
-            <p class="description">
-              Front-End, Back-End and support for the website of the creative
-              studio Caveat
-            </p>
-            <p class="location"><a href="#">hellocaveat.com</a> New York, US</p>
-          </div>
-        </div>
-        <div class="case-study">
-          <a href="/info/veneer" class="case-study-thumbnail" id="pink">
-            <img
-              class="case-study-logo"
-              src="/images/Veneer_logo.png"
-              alt="Veneer Logo"
-            />
-            <img src="/images/5_Veneer.png" alt="Veneer" />
-          </a>
-          <div>
-            <p class="description">
-              Front-End development and support of the project management system
-              Veneer
-            </p>
-            <p class="location"><a href="#">helloveneer.com</a> New York, US</p>
-          </div>
-        </div>
-        <div class="case-study">
-          <a
-            href="/info/MasterDelivery"
-            class="case-study-thumbnail"
-            id="orange"
-          >
-            <img
-              class="case-study-logo"
-              src="/images/Master_Delivery logo.png"
-              alt="Master Delivery Logo"
-            />
-            <img src="/images/4_MasterDelivery.png" alt="Master Delivery" />
-          </a>
-          <div>
-            <p class="description">
-              Front-End, Back-End development and support for the website
-              MasterDelivery
-            </p>
-            <p class="location">
-              <a href="#">masterdelivery.ru</a> Moscow, Russia
-            </p>
-          </div>
-        </div>
-        <div class="case-study">
-          <a href="/info/KinoPoisk" class="case-study-thumbnail" id="gradient">
-            <img
-              class="case-study-logo"
-              src="/images/Kinopoisk_logo.png"
-              alt="KinoPoisk"
-            />
-            <img src="/images/3_Kinopoisk.png" alt="KinoPoisk" />
-          </a>
-          <div>
-            <p class="description">
-              Front-End development and support for the website Kinopoisk
-            </p>
-            <p class="location">
-              <a href="#">kinopoisk.ru</a>
-              Moscow, Russia
-            </p>
-          </div>
-        </div>
-        <div class="case-study">
-          <a href="/info/YandexTV" class="case-study-thumbnail" id="black">
-            <img
-              class="case-study-logo"
-              src="/images/YandexTV_Logo.png"
-              alt="Yandex Logo"
-            />
-            <img src="/images/2_YandexTV.png" alt="Yandex Teleprogramm" />
-          </a>
-          <div>
-            <p class="description">
-              Front-End, Back-End development and support for the website Yandex
-              TV
-            </p>
-            <p class="location">
-              <a href="#">tv.yandex.ru</a>
-              Moscow, Russia
-            </p>
-          </div>
-        </div>
-        <div class="case-study">
-          <a href="/info/YouDo" class="case-study-thumbnail" id="purple">
-            <img
-              class="case-study-logo"
-              src="/images/YouDo_logo.png"
-              alt="YouDo Logo"
-            />
-            <img src="/images/1_YouDo.png" alt="You Do" />
-          </a>
-          <div>
-            <p class="description">
-              Front-End, Back-End development and support for the website YouDo
-            </p>
-            <p class="location">
-              <a href="#">youdo.com</a>
-              Moscow, Russia
-            </p>
-          </div>
-        </div>
-      </div>
+      <div class="wrapper" id="project-list"></div>
       <div class="much-more">And much more coming ...</div>
     </section>
     <section class="about">
@@ -229,6 +115,5 @@
       <span id="jobs_intern">For jobs / internships:</span>
       <span id="email_jobs">&nbsp; mailbox@theymade.com</span>
     </footer>
-    <script src="/main.js"></script>
   </body>
 </html>

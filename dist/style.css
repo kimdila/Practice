@@ -1,0 +1,500 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: #f5f5f5;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  padding: 9.8vh 0;
+}
+header,
+.experience,
+.about,
+.email {
+  padding: 0 25vw;
+  max-width: 100vw;
+}
+
+.logo img {
+  max-width: 26vw;
+  height: auto;
+}
+.brand {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.brand p {
+  font-family: "Inter", sans-serif;
+  font-size: 1.1rem;
+  color: #3799e0;
+  margin: 1rem 0 6.25rem;
+}
+.intro {
+  font-family: "Aleo", serif;
+  font-size: 1.8rem;
+  font-style: italic;
+  line-height: 3rem;
+  margin-bottom: 3.7rem;
+}
+.stack {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+h2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Aleo", serif;
+  font-weight: 700;
+  font-size: 2.6rem;
+  margin-top: 6.8rem;
+  margin-bottom: 2.8rem;
+}
+.contacts h2 {
+  margin-top: 8.7rem;
+  margin-bottom: 2.8rem;
+}
+.case-study p {
+  margin: 0.5rem 0;
+}
+.case-study-thumbnail {
+  max-width: 100%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+}
+.case-study-thumbnail img:last-child {
+  max-width: 100%;
+  height: auto;
+}
+.case-study-logo {
+  width: 100%;
+  position: absolute;
+  z-index: 1;
+}
+.experience,
+.email,
+.contacts {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2.5rem;
+  font-family: "Aleo", serif;
+  font-size: 1.1rem;
+}
+.case-study-thumbnail:before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  opacity: 0.9;
+}
+.case-study-thumbnail:hover::before {
+  opacity: 0.5;
+  transition: ease-in-out 1s;
+}
+.case-study-thumbnail img:hover {
+  opacity: 0;
+  transition: ease-in-out 1s;
+}
+
+#blue:before {
+  background-color: #4a5d9f;
+}
+
+#pink:before {
+  background-color: #d975c2;
+}
+#orange:before {
+  background-color: #ff5a00;
+}
+#gradient:before {
+  background: linear-gradient(
+    51.5deg,
+    #e26154 0%,
+    #a94ae7 29.29%,
+    #5e60f5 67.31%,
+    #5bbbe3 102.34%
+  );
+}
+#black:before {
+  background: radial-gradient(
+    102.03% 102.03% at 50% 0%,
+    #012f50 0%,
+    #000000 100%
+  );
+}
+#purple:before {
+  background: linear-gradient(
+    231.64deg,
+    #e16565 20.47%,
+    #5caac2 105.25%,
+    rgba(225, 101, 101, 0.015625) 105.26%,
+    rgba(225, 101, 101, 0) 105.27%
+  );
+}
+.description {
+  padding-top: 1rem;
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+.description:hover,
+a:hover {
+  color: #d90707;
+  cursor: pointer;
+}
+.location {
+  color: #a2a2a2;
+  font-weight: 100;
+}
+a {
+  text-decoration: none;
+  color: #3799e0;
+}
+.much-more {
+  font-family: "Inter", sans-serif;
+  font-size: 1.6rem;
+  color: #3799e0;
+  border: 4px solid #9ccdf0;
+  border-radius: 100px;
+  width: 25rem;
+  text-align: center;
+  padding: 1rem 2rem;
+  margin-top: 3rem;
+  font-weight: 600;
+}
+.about h2 {
+  margin-top: 7.3rem;
+}
+.about p {
+  font-family: "Inter", sans-serif;
+  font-size: 1.5rem;
+  line-height: 2.6rem;
+}
+.about p:last-child {
+  margin: 2rem 0rem 9rem;
+  align-self: flex-start;
+}
+.contacts {
+  font-family: "Inter", sans-serif;
+  background-color: #f2f1e1;
+  padding-bottom: 5.6rem;
+  margin: 0 20vw;
+}
+.clients_wrap {
+  /* max-width: 55vw; */
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: baseline;
+  justify-items: center;
+  column-gap: 4rem;
+  row-gap: 2rem;
+  padding: 0 3.3rem;
+  /* margin: 0 20vw; */
+}
+.contacts h2 {
+  margin: 5.25rem 0 3.3rem;
+}
+.contacts img {
+  width: 100%;
+}
+.logo_img p {
+  font-size: 1rem;
+  line-height: 1.5rem;
+  /* padding: 1.8rem 0; */
+}
+.email p {
+  font-family: "Inter", sans-serif;
+  font-size: 1rem;
+  padding: 7.8rem 0 2.8rem;
+}
+.email_logo {
+  max-width: 60%;
+  padding-bottom: 9rem;
+}
+footer {
+  background-color: #efefef;
+  width: 100vw;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 0.9rem;
+  padding: 4rem 0rem;
+}
+footer img {
+  /* width: 70%; */
+  align-self: center;
+  margin: 0 3rem;
+}
+footer span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: none;
+}
+#copyright {
+  justify-content: flex-end;
+  padding-right: 10px;
+}
+#jobs_intern {
+  justify-content: flex-end;
+}
+#logo_img {
+  justify-self: center;
+  width: 15vw;
+}
+#email_jobs {
+  justify-content: flex-start;
+  text-decoration: underline;
+}
+#email:hover,
+#email_jobs:hover {
+  color: #d90707;
+  cursor: pointer;
+}
+#email {
+  margin-left: 2rem;
+  text-decoration: underline;
+  justify-content: flex-start;
+}
+
+/* IPad Mini*/
+@media only screen and (max-width: 1000px) {
+  body {
+    padding: 6.25rem 0 28rem;
+  }
+  header,
+  .experience,
+  .about,
+  .support,
+  .process {
+    padding: 0 4.6rem 0;
+  }
+  .logo img {
+    max-width: 50vw;
+  }
+  .brand p {
+    margin: 25px 0 65px;
+  }
+  .intro {
+    font-size: 1.5rem;
+    line-height: 2.3rem;
+    margin-bottom: 2.5rem;
+  }
+  .stack {
+    font-size: 1rem;
+    line-height: 1.6rem;
+    margin-bottom: 8.1rem;
+  }
+  h2 {
+    font-size: 2.1rem;
+  }
+  .experience h2 {
+    margin: 0 0 3rem;
+  }
+  .experience p {
+    font-size: 1.1rem;
+    margin: 0;
+    line-height: 1.75rem;
+  }
+  .much-more {
+    font-size: 1.3rem;
+    font-weight: 700;
+    border: 2px solid #9ccdf0;
+    border-radius: 100px;
+    padding: 15px 20px 15px 25px;
+    width: 20rem;
+    margin-bottom: 8.75rem;
+  }
+  .about h2 {
+    margin: 0 0 2.8rem;
+  }
+  .about p,
+  .contacts p {
+    font-size: 1rem;
+    line-height: 1.75rem;
+  }
+  .contacts h2 {
+    margin: 6.5rem 0 6rem;
+  }
+  .contacts {
+    padding-bottom: 6.25rem;
+  }
+  .clients_wrap {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    align-items: baseline;
+  }
+  .padding {
+    padding: 0;
+  }
+  .email p {
+    font-size: 1rem;
+    text-align: center;
+    padding-top: 5rem;
+    margin-bottom: 2rem;
+  }
+  .email img {
+    max-width: 60vw;
+    padding-bottom: 6rem;
+  }
+  footer {
+    font-size: 0.4rem;
+    padding: 2.1rem;
+  }
+  #email {
+    justify-content: flex-start;
+  }
+}
+/* Mobile */
+@media only screen and (max-width: 480px) {
+  body {
+    padding: 4.3rem 0 30rem;
+  }
+  header,
+  .experience,
+  .about,
+  .support,
+  .process {
+    padding: 0 2.2rem 0;
+  }
+  .brand {
+    margin: 0;
+  }
+  .brand p {
+    padding: 1rem 0 3.5rem;
+    margin: 0;
+  }
+  .logo img {
+    max-width: 50vw;
+  }
+  .intro {
+    font-size: 1.3rem;
+    line-height: 2rem;
+  }
+  .stack {
+    font-size: 0.9rem;
+    line-height: 1.5rem;
+  }
+  .brand p {
+    font-size: 1rem;
+    text-align: center;
+  }
+  h2 {
+    font-size: 2rem;
+    text-align: center;
+  }
+  .about h2 {
+    margin-top: 6.8rem;
+    margin-bottom: 2.5rem;
+  }
+  .wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    font-size: 0.8rem;
+    padding: 0 15px;
+  }
+  .wrapper p {
+    margin: 0;
+  }
+  .description {
+    padding-top: 8px;
+  }
+  .much-more {
+    max-width: 19rem;
+    font-size: 1.2rem;
+    border: 2px solid #9ccdf0;
+    border-radius: 100px;
+    padding: 0.8rem 1.5rem;
+    margin: 0;
+  }
+  .about p {
+    font-size: 1rem;
+    line-height: 1.75rem;
+    padding: 0;
+  }
+  .clients_wrap {
+    width: 100vw;
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    align-items: baseline;
+    gap: 2vh;
+    font-size: 0.7rem;
+  }
+  .logo_img {
+    max-width: 100%;
+  }
+  .about p:last-child {
+    margin-top: 2.5rem;
+  }
+  .contacts h2 {
+    margin: 5rem 0rem 5rem;
+  }
+  .email p {
+    font-size: 1rem;
+    text-align: center;
+    padding-top: 5rem;
+  }
+  .email img {
+    max-width: 60vw;
+    padding-bottom: 6rem;
+  }
+  footer {
+    height: auto;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    font-size: 0.8rem;
+    line-height: 1.1rem;
+    padding: 0;
+  }
+
+  #copyright {
+    order: 5;
+    padding-bottom: 40px;
+    align-self: center;
+  }
+  #email {
+    order: 1;
+    padding-top: 50px;
+    padding-bottom: 25px;
+    justify-content: center;
+  }
+  #logo_img {
+    order: 4;
+    padding-bottom: 15px;
+    width: 50vw;
+    align-self: center;
+  }
+  #jobs_intern {
+    order: 2;
+    justify-content: center;
+  }
+  #email_jobs {
+    order: 3;
+    padding-bottom: 60px;
+    justify-content: center;
+  }
+}

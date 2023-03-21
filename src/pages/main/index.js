@@ -1,25 +1,30 @@
+import 'src/pages/root.css';
 
-import { projects, list } from "./data";
-window.addEventListener("DOMContentLoaded", () => init(projects, list));
+import {
+    projects,
+    list,
+} from 'src/data';
+import View from 'src/view';
+
+View.bootstrap(() => init(projects, list));
 
 function init(projects, list) {
-  const projectListWrapper = document.getElementById("project-list");
-  const projectListHTML = prepareProjectList(projects, list);
-  console.log("initcall");
-  projectListWrapper.insertAdjacentHTML("afterbegin", projectListHTML);
+    const MainView = new View('project-list');
+    const projectListHTML = prepareProjectList(projects, list);
+    MainView.render(projectListHTML);
 }
 
 function prepareProjectList(projects, list) {
-  return list.reduce((accum, projectName) => {
-    const project = projects[projectName];
-    const html = createProjectHTML(project);
+    return list.reduce((accum, projectName) => {
+        const project = projects[projectName];
+        const html = createProjectHTML(project);
 
-    return accum + html;
-  }, "");
+        return accum + html;
+    }, '');
 }
 
 function createProjectHTML(project) {
-  return `
+    return `
         <div class="case-study">
           <a
             href="${project.href}"

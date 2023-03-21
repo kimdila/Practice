@@ -1,0 +1,525 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+body{
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  padding: 9.8vh 0 0;
+  overflow-x: hidden !important;
+}
+header,
+.brand,
+.experience,
+.about,
+.email {
+  max-width: 844px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.logo img {
+  width: 26.3vw;
+}
+
+.brand p {
+  font-family: "Inter", sans-serif;
+  font-size: 1.1rem;
+  color: #3799e0;
+  margin: 1rem 0 5rem;
+  text-align: center;
+}
+.intro {
+  font-family: "Aleo", serif;
+  font-size: 1.8rem;
+  font-style: italic;
+  line-height: 3rem;
+  margin: 0 0 2.5rem;
+}
+.stack {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  margin: 0;
+}
+h2 {
+  font-family: "Aleo", serif;
+  font-weight: 700;
+  font-size: 2.6rem;
+  margin-top: 6.2rem;
+  margin-bottom: 2.5rem;
+}
+
+.case-study p {
+  margin: 0.5rem 0;
+}
+.case-study-thumbnail {
+  width: 100%;
+  height: auto;
+  /* overflow: hidden; */
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  position: relative;
+  cursor: pointer;
+}
+
+.case-study-thumbnail img:last-child {
+  width: 100%;
+  height: auto;
+  transition: ease-out 0.5s;
+}
+.case-study-logo {
+  width: 100%;
+  height: auto;
+  position: absolute;
+  z-index: 1;
+}
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  overflow: hidden;
+  gap: 2.5rem;
+  font-family: "Aleo", serif;
+  font-size: 1.1rem;
+}
+.case-study {
+  width: 100%;
+  height: 100%;
+}
+.case-study-thumbnail:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.9;
+  transition: all 0.5s ease-in-out;
+}
+.case-study-thumbnail:hover::before {
+  opacity: 0.5;
+}
+.case-study-thumbnail img:hover {
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
+}
+.case-study-thumbnail img:not(:hover) {
+  opacity: 1;
+  transition: all 0.5s ease-in-out 0.1s; 
+}
+
+#blue:before {
+  background-color: #4a5d9f;
+}
+#pink:before {
+  background-color: #d975c2;
+}
+#orange:before {
+  background-color: #ff5a00;
+}
+#gradient:before {
+  background: linear-gradient(
+    51.5deg,
+    #e26154 0%,
+    #a94ae7 29.29%,
+    #5e60f5 67.31%,
+    #5bbbe3 102.34%
+  );
+}
+#black:before {
+  background: radial-gradient(
+    102.03% 102.03% at 50% 0%,
+    #012f50 0%,
+    #000000 100%
+  );
+}
+#purple:before {
+  background: linear-gradient(
+    231.64deg,
+    #e16565 20.47%,
+    #5caac2 105.25%,
+    rgba(225, 101, 101, 0.015625) 105.26%,
+    rgba(225, 101, 101, 0) 105.27%
+  );
+}
+.description {
+  padding-top: 1rem;
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+.description:hover,
+a:hover {
+  color: #d90707;
+  cursor: pointer;
+}
+.location {
+  color: #a2a2a2;
+  font-weight: 100;
+}
+a {
+  text-decoration: none;
+  color: #3799e0;
+}
+.much-more {
+  font-family: "Inter", sans-serif;
+  font-size: 1.6rem;
+  color: #3799e0;
+  border: 4px solid #9ccdf0;
+  border-radius: 100px;
+  width: 25rem;
+  text-align: center;
+  padding: 1rem 2rem;
+  margin-top: 3rem;
+  font-weight: 600;
+}
+.about h2 {
+  margin: 7.3rem auto 3rem;
+}
+.about p {
+  font-family: "Inter", sans-serif;
+  font-size: 1rem;
+  line-height: 2rem;
+  align-self: flex-start;
+  margin-bottom: 1.2rem;
+}
+.about p:last-child {
+  margin: 0 0 5.6rem;
+  align-self: flex-start;
+}
+.contacts {
+  font-family: "Inter", sans-serif;
+  background-color: #f2f1e1;
+  padding: 5rem;
+  margin: 0 80px;
+  max-width: 1024px;
+  /* width: 100%; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
+.contacts h2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 8.7rem;
+  margin-bottom: 2.8rem;
+}
+.clients_wrap {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 3.1rem;
+  row-gap: 2rem;
+  max-width: 52em;
+}
+.contacts h2 {
+  margin: 0 0 2rem;
+ 
+}
+.logo_img {
+  max-width: 100%;
+}
+.logo_img p {
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+.email p {
+  font-family: "Inter", sans-serif;
+  font-size: 1rem;
+  padding: 7.8rem 0 2.8rem;
+}
+.email_logo {
+  margin-bottom: 9rem;
+}
+footer {
+  background-color: #efefef;
+  width: 100vw;
+  height: 9vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.footer {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  align-items: center;
+  justify-content: center;
+  font-family: "Inter", sans-serif;
+  font-size: 0.9rem;
+}
+footer img {
+  width: 12vw;
+}
+#copyright {
+  justify-self: flex-end;
+}
+#jobs_intern {
+  justify-self: flex-end;
+}
+#logo_img {
+  justify-self: center;
+}
+#email_jobs {
+  justify-self: flex-start;
+  text-decoration: underline;
+}
+#email {
+  justify-self: flex-start;
+  text-decoration: underline;
+}
+#email:link,
+#email_jobs:link {
+  color: black;
+}
+
+/* IPad Mini*/
+@media only screen and (max-width: 994px) {
+  body {
+    padding: 6.25rem 0 0;
+  }
+  header,
+  .experience,
+  .about {
+    padding: 0 4.6rem 0;
+  }
+  .brand img {
+    width: 47vw;
+  }
+  .brand p {
+    margin: 1.5rem 0 4rem;
+  }
+  .intro {
+    font-size: 1.5rem;
+    line-height: 2.3rem;
+    margin-bottom: 2.5rem;
+  }
+  .stack {
+    font-size: 1rem;
+    line-height: 1.6rem;
+    margin-bottom: 8.1rem;
+  }
+  h2 {
+    font-size: 2.1rem;
+  }
+  .experience h2 {
+    margin: 0 0 3rem;
+  }
+  .experience p {
+    font-size: 1.1rem;
+    margin: 0;
+    line-height: 1.75rem;
+  }
+  .much-more {
+    font-size: 1.3rem;
+    font-weight: 700;
+    border: 2px solid #9ccdf0;
+    border-radius: 100px;
+    padding: 15px 20px 15px 25px;
+    width: 20rem;
+    margin-bottom: 5.9rem;
+  }
+  .about h2 {
+    margin: 0 0 1.4rem;
+  }
+  .about p,
+  .contacts p {
+    font-size: 0.9rem;
+    line-height: 1.65rem;
+  }
+  .contacts {
+    padding: 3rem;
+    margin: 0;
+  }
+  .clients_wrap {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2.2rem;
+    /* max-width: 100%; */
+  }
+  .contacts img {
+    width: 22vw;
+  }
+  .logo_img {
+    width: 23vw;
+  }
+  .email img {
+    width: 62vw;
+    margin: 0 0 5.9rem;
+  }
+  .email p {
+    font-size: 1rem;
+    text-align: center;
+    padding-top: 5rem;
+  }
+
+  .footer {
+    font-size: 0.5rem;
+  }
+  footer img {
+    width: 18vw;
+  }
+  #email {
+    justify-content: flex-start;
+  }
+}
+/* Mobile */
+@media only screen and (max-width: 580px) {
+  header,
+  .experience,
+  .about,
+  .support,
+  .process,
+  .email {
+    padding: 0 2.2rem;
+  }
+  .brand img {
+    width: 63vw;
+  }
+  .brand p {
+    padding: 1rem 0 3.5rem;
+    margin: 0;
+  }
+  .intro {
+    font-size: 1.3rem;
+    line-height: 2rem;
+  }
+  .stack {
+    font-size: 0.9rem;
+    line-height: 1.5rem;
+    margin-bottom: 4.6rem;
+  }
+  .brand p {
+    font-size: 1rem;
+    text-align: center;
+  }
+  h2 {
+    font-size: 2.5rem;
+    text-align: center;
+  }
+  .experience h2 {
+    margin-bottom: 2rem;
+  }
+  .wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    font-size: 0.8rem;
+  }
+  .description {
+    padding-top: 0.9rem;
+  }
+  .much-more {
+    max-width: 19rem;
+    font-size: 1.2rem;
+    border: 2px solid #9ccdf0;
+    border-radius: 100px;
+    padding: 0.8rem 1.5rem;
+    margin: 1.5rem 0 0;
+  }
+  .about h2 {
+    margin: 4.5rem 0 2.5rem;
+  }
+  .about p {
+    font-size: 1rem;
+    line-height: 1.75rem;
+    padding: 0;
+  }
+  .about p:last-child {
+    margin: 2.5rem 0 4rem;
+  }
+  .contacts {
+    width: 100%;
+    height: auto;
+    padding: 2.2rem;
+    margin: 0;
+  }
+  .contacts img {
+    width: 100%;
+  }
+  .logo_img {
+    width: 100%;
+    font-size: 0.6rem;
+  }
+  .clients_wrap {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+
+  .email p {
+    font-size: 1rem;
+    line-height: 1.5rem;
+    text-align: center;
+    padding: 5rem 0 1.5rem;
+    margin-bottom: 0;
+  }
+  .email img {
+    width: 81vw;
+    padding-bottom: 5rem;
+    margin-bottom: 0;
+  }
+  footer {
+    height: auto;
+  }
+  .footer {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    font-size: 0.8rem;
+    line-height: 1.1rem;
+    padding: 0;
+  }
+  footer img {
+    width: 33vw;
+  }
+
+  #copyright {
+    order: 5;
+    padding-bottom: 2.5rem;
+    align-self: center;
+  }
+  #email {
+    order: 1;
+    padding-top: 3rem;
+    padding-bottom: 1.5rem;
+    align-self: center;
+    margin: 0;
+  }
+  #logo_img {
+    order: 4;
+    padding-bottom: 0.9rem;
+    align-self: center;
+  }
+  #jobs_intern {
+    order: 2;
+    justify-content: center;
+  }
+  #email_jobs {
+    order: 3;
+    padding-bottom: 3.75rem;
+    justify-content: center;
+  }
+
+  @media (max-width: 768px) {
+    .case-study-thumbnail:hover::before {
+      opacity: 0.9;
+      
+    }
+    .case-study-thumbnail img:hover {
+      opacity: 1;
+      transition: none;
+    }
+    .description:hover{
+      color: inherit;
+      cursor: auto;
+    }
+    a:hover {
+      color: #3799e0;
+    }
+  }
+}
